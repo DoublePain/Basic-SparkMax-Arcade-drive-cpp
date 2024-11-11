@@ -1,0 +1,4 @@
+See file:///C:/Users/Aidan/Desktop/Robot%20code/C++%20Spark%20Max/Spark%20Max%20Drive/build/tmp/linkFrcUserProgramLinuxathenaReleaseExecutable/output.txt for all output for linkFrcUserProgramLinuxathenaReleaseExecutable.
+linking frcUserProgram successful.
+
+Finished linkFrcUserProgramLinuxathenaReleaseExecutable, see full log file:///C:/Users/Aidan/Desktop/Robot%20code/C++%20Spark%20Max/Spark%20Max%20Drive/build/tmp/linkFrcUserProgramLinuxathenaReleaseExecutable/output.txt.
