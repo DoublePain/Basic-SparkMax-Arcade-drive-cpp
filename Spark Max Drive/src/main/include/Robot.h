@@ -34,6 +34,8 @@ class Robot : public frc::TimedRobot {
   void SimulationInit() override;
   void SimulationPeriodic() override;
   void arcade_drive(void);
+  void Intake(void) ;
+  void Auto(double);
  private:
   frc::SendableChooser<std::string> m_chooser;
   const std::string kAutoNameDefault = "Default";
@@ -43,11 +45,15 @@ class Robot : public frc::TimedRobot {
 //Joystick
   Joystick Controller{0};
 
+//Timer for auto
+Timer AutoTimer;
+
 //Motor controllers
 //The motor ID's will likely need to be changed in accordance with your robot wiring to the pdp
 PWMSparkMax LeftFront{0};
 PWMSparkMax RightFront{1};
 PWMSparkMax RightBack{2};
 PWMSparkMax LeftBack{3};
+PWMSparkMax IntakeMotor{4};
 
 };
