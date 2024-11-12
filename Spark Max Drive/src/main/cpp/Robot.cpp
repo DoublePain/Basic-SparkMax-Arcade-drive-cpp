@@ -20,7 +20,7 @@ std::cout << "Right Back Motor ID: " << IntakeMotor.GetChannel() << std::endl;
 void Robot::RobotPeriodic() {}
 
 void Robot::AutonomousInit() {
- 
+ Auto();
 }
 
 void Robot::AutonomousPeriodic() {
