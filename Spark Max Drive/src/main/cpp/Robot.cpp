@@ -13,6 +13,7 @@ std::cout << "Left Front Motor ID: " << LeftFront.GetChannel() << std::endl;
 std::cout << "Right Front Motor ID: " << RightFront.GetChannel() << std::endl;
 std::cout << "Left Back Motor ID: " << LeftBack.GetChannel() << std::endl;
 std::cout << "Right Back Motor ID: " << RightBack.GetChannel() << std::endl;
+std::cout << "Right Back Motor ID: " << IntakeMotor.GetChannel() << std::endl;
 
 }
 
@@ -28,8 +29,10 @@ void Robot::AutonomousPeriodic() {
 
 void Robot::TeleopInit() {}
 
+//Once teleop begins, everything in here will run periodically
 void Robot::TeleopPeriodic() {
   arcade_drive(); //Calling the drive function
+  Intake(); // Calling the intake function
 }
 
 void Robot::DisabledInit() {}
